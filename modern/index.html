@@ -55,6 +55,22 @@
 									ただそれだけです!先輩達とのコミュニケーションに迷うこともありません。1人で全部完結させることも可能!周りと一緒に作品を作り上げることも可能!
 									自分の好きなように活動出来る現代的な部活動です! 
 								</p>
+								  <div>単位計算Bookmarklet配布</div><br>
+  									<a class="btn btn-success"
+									   href="javascript:(function()%7Blet%20sum%3D0%3Blet%20CLICKED_
+									   CLASS%3D%22sum-clicked%22%3Bdocument.body.
+									   onclick%3Dfunction(e)%7Blet%20target%3De.
+									   target%3Blet%20num%3DparseInt(target.textContent)%3Bif
+									   (isNaN(num))%7Breturn%3B%7Dlet%20is_td%3Dtarget.
+									   tagName%3D%3D%22TD%22%20%7C%7C%20target.
+									   tagName%3D%3D%22td%22%3Bif(!is_td)%7Breturn%3B%7Dlet%20is_clicked%3Dtarget.
+									   classList.contains(CLICKED_CLASS)%3Bif(is_clicked)%7Btarget.classList.
+									   remove(CLICKED_CLASS)%3Btarget.
+									   setAttribute(%22style%22%2C%22%22)%3Bsum%3Dsum%20-%20num%3Balert(sum)%3B%7Delse%7Btarget.
+									   classList.add(CLICKED_CLASS)%3Btarget.setAttribute
+									   (%22style%22%2C%22background%3A%2300ffff%3B%22)%3Bsum%3Dsum%20%2B%20num%3Balert(sum)
+									   %3B%7D%7D%7D)()%3Bvoid(0);">高専生の単位計算</a><br>
+									   <div>↑　のリンクボタンをブックマークバーにドラック&ドロップ</div> 
 							</article>
 
 						<!-- Contact -->
